@@ -12,7 +12,7 @@ export default class Tab extends React.Component {
     if (!cityConf || !Array.isArray(cityConf)) {
       throw new Error('prop data should be an Array');
     }
-    cityConf = [...cityConf];
+    cityConf = JSON.parse(JSON.stringify(cityConf));
     let selected = props.selected || []; // already selected data
     if (!Array.isArray(selected)) {
       throw new Error('prop selected should be an Array');
