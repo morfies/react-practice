@@ -3,7 +3,7 @@ import { Button, Modal } from 'antd';
 import CityList from './components/cityList';
 import SelectedArea from './components/selectedArea';
 
-export default class Tab extends React.Component {
+export default class CitySelector extends React.Component {
   constructor(props) {
     super(props);
     console.log('constructor');
